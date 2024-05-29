@@ -1,0 +1,39 @@
+{
+    "name": "Hello World",
+    "description": "Atlassian Connect app",
+    "key": "com.example.myapp",
+    "baseUrl": "https://3d4b-43-248-152-116.ngrok-free.app",
+    "vendor": {
+        "name": "Example, Inc.",
+        "url": "http://example.com"
+    },
+    "links": {
+        "self": "https://3d4b-43-248-152-116.ngrok-free.app/atlassian-connect.json"
+      },
+    "authentication": {
+        "type": "none"
+    },
+    "apiVersion": 1,
+    "modules": {
+        "jiraIssueTabPanels": [
+            {
+              "url": "/tabButton.js",
+              "weight": 100,
+              "name": {
+                "value": "Hello Worlds"
+              },
+              "key": "tabButton"
+            }
+          ],
+        "generalPages": [
+            {
+                "url": "/helloworld.html",
+                "key": "hello-world",
+                "location": "system.top.navigation.bar",
+                "name": {
+                    "value": "Hello world"
+                }
+            }
+        ]
+    }
+}
